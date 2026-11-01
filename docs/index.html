@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Open Finnish GPU initiative and ValoX: exploring dynamic graphics, path tracing and machine-learning inference.">
+  <meta name="theme-color" content="#10191c">
+  <title>opengpu — Finnish GPU & ValoX</title>
+  <style>
+    :root { color-scheme: dark; font-family: system-ui, sans-serif; background: #10191c; color: #e9efed; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { max-width: 880px; margin: auto; padding: clamp(32px, 8vw, 96px) 24px 48px; }
+    .eyebrow { color: #a6c9bd; font-size: .8rem; letter-spacing: .16em; text-transform: uppercase; }
+    h1 { font-size: clamp(3.4rem, 12vw, 6rem); letter-spacing: -.065em; line-height: 1; margin: 30px 0 24px; }
+    .intro { font-size: clamp(1.25rem, 3vw, 1.7rem); max-width: 650px; line-height: 1.5; }
+    .vision { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px; margin: 56px 0; border-top: 1px solid #39504c; padding-top: 30px; }
+    h2 { font-size: 1.35rem; font-weight: 600; margin: 0 0 16px; }
+    p { line-height: 1.7; }
+    section p, footer { color: #b9c8c3; }
+    a { color: #b4e8d3; text-underline-offset: .2em; }
+    a:hover { color: white; }
+    a:focus-visible { outline: 2px solid #b4e8d3; outline-offset: 5px; }
+    footer { border-top: 1px solid #39504c; padding-top: 24px; font-size: .9rem; }
+    footer nav { display: flex; flex-wrap: wrap; gap: 24px; margin-top: 24px; }
+    @media (max-width: 600px) { .vision { grid-template-columns: 1fr; gap: 24px; margin: 40px 0; } }
+  </style>
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Open Finnish GPU initiative</p>
+    <h1>opengpu</h1>
+    <p class="intro">An open exploration of graphics and compute.<br>Built around dynamic worlds and simple interfaces.</p>
+    <div class="vision">
+      <section aria-labelledby="gpu">
+        <h2 id="gpu">Finnish GPU</h2>
+        <p>Explore an accessible approach to graphics and compute, from software experiments to future hardware. Share the ideas, question the tradeoffs, and let measured results guide the design.</p>
+        <p>The goal is fully dynamic graphics: worlds that can change at any moment, with intelligent reuse of work instead of mandatory offline lighting bakes.</p>
+      </section>
+      <section aria-labelledby="valox">
+        <h2 id="valox">ValoX API</h2>
+        <p>A small, explicit interface for path tracing and machine-learning inference. Make useful computation easy to call while keeping application and presentation choices outside the API.</p>
+        <p>Start with practical workloads and clear behavior. Keep the interface portable as implementations and hardware evolve.</p>
+      </section>
+    </div>
+    <footer>
+      <p>Early research and development. These are design goals, not claims of finished hardware or a stable API. This site is the public home for documentation and discussion.</p>
+      <nav aria-label="Project links">
+        <a href="https://github.com/timosaarinen/opengpu">GitHub repository</a>
+        <a href="https://github.com/timosaarinen/opengpu/issues">Ideas & discussion</a>
+      </nav>
+    </footer>
+  </main>
+</body>
+</html>
