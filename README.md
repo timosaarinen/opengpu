@@ -17,3 +17,8 @@ To preview locally, run `python -m http.server 8000 --directory docs` and open
 http://localhost:8000/.
 
 Use this repository's issues for ideas and discussion.
+
+The background is a curated ValoX forest render: a looping camera flight over
+moonlit water and volumetric mist. It is an offline-rendered video, not an
+interactive browser renderer. The page offers a pause button and uses a still
+image by default when reduced motion or data saving is requested.
