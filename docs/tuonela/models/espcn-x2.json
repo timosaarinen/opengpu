@@ -1,0 +1,39 @@
+{
+  "name": "ESPCN x2",
+  "source": "https://raw.githubusercontent.com/fannymonori/TF-ESPCN/5c628eca82028161a53e1265cc3a5b571ab8625f/export/ESPCN_x2.pb",
+  "revision": "5c628eca82028161a53e1265cc3a5b571ab8625f",
+  "sourceSha256": "59f77351e1d7c0057bf6fe088b4a8a07e42c468c8c8aebb674a6b4ea1823221d",
+  "sha256": "be3b41b6d5410aa6539dd7dd0664ad3bb637f70628d4c52b1d1b677102be920d",
+  "bytes": 85136,
+  "scale": 2,
+  "input": "BT.601 luma of display-encoded RGB, [0,1]; NHWC, zero SAME padding",
+  "output": "tanh luma, TensorFlow NHWC depth_to_space block 2",
+  "layers": [
+    {
+      "kernel": 5,
+      "inputs": 1,
+      "outputs": 64,
+      "weightOffset": 0,
+      "biasOffset": 1600,
+      "activation": "relu"
+    },
+    {
+      "kernel": 3,
+      "inputs": 64,
+      "outputs": 32,
+      "weightOffset": 1664,
+      "biasOffset": 20096,
+      "activation": "relu"
+    },
+    {
+      "kernel": 3,
+      "inputs": 32,
+      "outputs": 4,
+      "weightOffset": 20128,
+      "biasOffset": 21280,
+      "activation": "tanh"
+    }
+  ],
+  "license": "Apache-2.0; see LICENSE-ESPCN",
+  "modified": "Tensor constants exported to little-endian f32 HWIO; no retraining"
+}

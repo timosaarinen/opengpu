@@ -29,3 +29,9 @@ image by default when reduced motion or data saving is requested.
 (https://timosaarinen.github.io/opengpu/tuonela/), produced by the Tuonela Walk
 release packager and copied here unchanged. Do not edit it by hand. Its service worker supplies the cross-origin isolation that
 the threaded WebAssembly needs, because GitHub Pages cannot send those headers.
+
+The current release candidate requires WebGPU. It includes experimental learned
+ESPCN reconstruction and motion-guided frame interpolation; it is not NVIDIA DLSS
+or AMD FSR. Model provenance and the Apache-2.0 license ship under
+`docs/tuonela/models/`. `docs/tuonela/release.json` identifies the exact app and
+shared-library revisions. Quality and performance are still under evaluation.

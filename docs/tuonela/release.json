@@ -1,0 +1,7 @@
+{
+  "candidate": true,
+  "app": "fc0c5f766bb78093be9b3761a43dda9137cad176",
+  "fgpu": "7f690eef29084cee3ddd6507f2797a4f988834e9",
+  "requires": "WebGPU",
+  "provider": "ESPCN x2 + temporal reconstruction + motion-guided interpolation"
+}
