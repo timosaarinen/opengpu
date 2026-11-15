@@ -18,6 +18,14 @@ http://localhost:8000/.
 
 Use this repository's issues for ideas and discussion.
 
+## Capture links for issue comments
+
+Use [tools/publish-captures.py](tools/publish-captures.py) to publish selected
+screenshots/short captures under `internal/images/` and obtain immutable public
+image links, optionally posting them to an issue in one command. See the
+[capture workflow](internal/images/README.md). The tool uses an isolated worktree
+and needs no separate image-hosting service.
+
 The background is a curated ValoX forest render: a looping camera flight over
 moonlit water and volumetric mist. It is an offline-rendered video, not an
 interactive browser renderer. The page offers a pause button and uses a still
