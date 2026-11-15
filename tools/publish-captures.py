@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["Pillow>=11.1"]
+# ///
 """Publish selected captures and print/post immutable image links for issue comments."""
 from __future__ import annotations
 
@@ -35,6 +39,16 @@ def slug(value):
     return result
 
 
+def pixel_identity(image):
+    # Pixel identity must not depend on Pillow/zlib's platform-specific PNG bytes.
+    rgba = image.convert("RGBA")
+    digest = hashlib.sha256(b"opengpu-pixels-v1\0")
+    for size in rgba.size:
+        digest.update(size.to_bytes(4, "little"))
+    digest.update(rgba.tobytes())
+    return digest.hexdigest()
+
+
 def asset(path, label=None):
     path = Path(path).resolve(strict=True)
     if not path.is_file() or path.stat().st_size > 50 * 1024 * 1024:
@@ -42,6 +56,7 @@ def asset(path, label=None):
     ext = path.suffix.lower()
     if ext in (".mp4", ".webm", ".gif"):
         data = path.read_bytes()
+        digest = hashlib.sha256(data).hexdigest()
         valid = ((ext == ".mp4" and data[4:8] == b"ftyp") or
                  (ext == ".webm" and data[:4] == b"\x1aE\xdf\xa3") or
                  (ext == ".gif" and data[:6] in (b"GIF87a", b"GIF89a")))
@@ -56,22 +71,26 @@ def asset(path, label=None):
             if getattr(source, "is_animated", False):
                 raise ValueError("Use GIF/WebM/MP4 for an animated capture")
             image = source.convert("RGBA" if "A" in source.getbands() else "RGB")
+            digest = pixel_identity(image)
             image.info.clear()  # publish pixels, without source metadata
             output = io.BytesIO()
             image.save(output, format="PNG")
             data, ext = output.getvalue(), ".png"
     else:
         raise ValueError(f"Expected a browser-viewable capture, got {path.name}")
-    digest = hashlib.sha256(data).hexdigest()
     return {"name": f"{slug(path.stem)}-{digest[:16]}{ext}", "data": data,
             "sha256": digest, "label": label or path.stem.replace("-", " ").replace("_", " "),
             "video": ext in (".mp4", ".webm")}
 
 
-def markdown(assets, repository, commit, group, title):
-    fingerprint = hashlib.sha256(json.dumps(
-        [group, title, [(a["sha256"], a["label"]) for a in assets]],
+def batch_fingerprint(assets, group, title, field="sha256"):
+    return hashlib.sha256(json.dumps(
+        [group, title, [(a.get(field, a["sha256"]), a["label"]) for a in assets]],
         ensure_ascii=True).encode()).hexdigest()[:24]
+
+
+def markdown(assets, repository, commit, group, title):
+    fingerprint = batch_fingerprint(assets, group, title)
     lines = [f"<!-- opengpu-captures:{fingerprint} -->", title, ""]
     for item in assets:
         url = f"https://raw.githubusercontent.com/{repository}/{commit}/internal/images/{group}/{item['name']}"
@@ -79,6 +98,38 @@ def markdown(assets, repository, commit, group, title):
         label = item["label"].replace("\\", "\\\\").replace("[", "\\[").replace("]", "\\]")
         lines += [f"{'!' if not item['video'] else ''}[{label}]({url})", ""]
     return "\n".join(lines), fingerprint
+
+
+def store_asset(directory, item):
+    target = directory / item["name"]
+    if target.suffix == ".png":
+        # Reuse legacy byte-hash filenames too, keeping every published URL valid.
+        stem = target.stem.rsplit("-", 1)[0]
+        candidates = [target] if target.exists() else list(dict.fromkeys(
+            sorted(directory.glob(f"*-{item['sha256'][:16]}.png")) +
+            sorted(directory.glob(stem + "-*.png"))))
+        for existing in candidates:
+            try:
+                identical = asset(existing)["sha256"] == item["sha256"]
+            except (OSError, ValueError):
+                if existing == target:
+                    raise
+                continue
+            if identical:
+                item["name"] = existing.name
+                item["stored_sha256"] = hashlib.sha256(existing.read_bytes()).hexdigest()
+                return False
+            if existing == target:
+                raise RuntimeError("A content-addressed capture already has different pixels")
+    if target.exists():
+        if target.read_bytes() != item["data"]:
+            raise RuntimeError("A content-addressed capture already has different bytes")
+        changed = False
+    else:
+        target.write_bytes(item["data"])
+        changed = True
+    item["stored_sha256"] = hashlib.sha256(target.read_bytes()).hexdigest()
+    return changed
 
 
 def publish(repo, assets, group):
@@ -97,10 +148,7 @@ def publish(repo, assets, group):
         directory = work / "internal" / "images" / group
         directory.mkdir(parents=True, exist_ok=True)
         for item in assets:
-            target = directory / item["name"]
-            if target.exists() and target.read_bytes() != item["data"]:
-                raise RuntimeError("A content-addressed capture already has different bytes")
-            target.write_bytes(item["data"])
+            store_asset(directory, item)
         relative = f"internal/images/{group}"
         git(work, "add", "--", relative)
         if git(work, "diff", "--cached", "--name-only"):
@@ -136,17 +184,17 @@ def verify(assets):
                 time.sleep(2)
 
 
-def comment(repo, issue, body, fingerprint):
+def comment(repo, issue, body, *fingerprints):
     match = re.fullmatch(r"([\w.-]+/[\w.-]+)#([1-9][0-9]*)", issue)
     if not match:
         raise ValueError("--issue must be owner/repository#number")
     repository, number = match.groups()
     pages = json.loads(run(["gh", "api", f"repos/{repository}/issues/{number}/comments",
                            "--paginate", "--slurp"], repo).stdout)
-    marker = f"<!-- opengpu-captures:{fingerprint} -->"
+    markers = [f"<!-- opengpu-captures:{value} -->" for value in fingerprints]
     for page in pages:
         for row in page:
-            if marker in row.get("body", ""):
+            if any(marker in row.get("body", "") for marker in markers):
                 return row["html_url"]
     handle, name = tempfile.mkstemp(prefix="capture-comment-", suffix=".md")
     try:
@@ -183,7 +231,8 @@ def main():
     verify(assets)
     print(body)
     if args.issue:
-        print("Issue comment:", comment(repo, args.issue, body, fingerprint))
+        print("Issue comment:", comment(repo, args.issue, body, fingerprint,
+              batch_fingerprint(assets, group, args.title, "stored_sha256")))
 
 
 if __name__ == "__main__":

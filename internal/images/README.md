@@ -7,7 +7,7 @@ filenames and immutable GitHub raw URLs.
 From any directory, publish selected files with:
 
 ```sh
-python /path/to/opengpu/tools/publish-captures.py --group forest-review \
+uv run /path/to/opengpu/tools/publish-captures.py --group forest-review \
   --title "Forest enhancement: current views" \
   --issue owner/project#123 \
   --asset "Night overlook" /path/to/overlook.bmp \
@@ -15,14 +15,19 @@ python /path/to/opengpu/tools/publish-captures.py --group forest-review \
 ```
 
 Omit `--issue` to print Markdown for pasting yourself. Plain file arguments also
-work; their filenames supply the captions. `--dry-run` validates and normalizes
-the inputs without Git/network writes. Still images use Pillow (`python -m pip
-install Pillow`); Git is required, and posting needs an authenticated `gh`.
+work; their filenames supply the captions. `uv run` sets up an isolated Python
+and Pillow environment from the script metadata, including on hosts with no pip.
+With Pillow installed, `python /path/to/script.py ...` also works. `--dry-run`
+validates and normalizes inputs without Git/network writes. Git is required;
+posting needs an authenticated `gh`.
 
 The tool fetches main, creates an isolated temporary worktree, commits/pushes
 the selected captures by fast-forward, verifies the public URLs, and optionally
 posts the Markdown. Repeating the same upload reuses existing content; repeating
-the same issue request returns the existing comment. Other worktrees stay intact.
+the same issue request returns the existing comment. Still-image identity uses
+pixels and dimensions, so Windows/Linux PNG compression differences do not
+create duplicate files. Existing byte-hash filenames and issue comments are
+recognized and reused. Other worktrees stay intact.
 BMP/PNG/JPEG/WebP become PNG with pixels preserved and source metadata removed;
 GIF, MP4 and WebM retain their animation. Each file is limited to 50 MiB.
 
