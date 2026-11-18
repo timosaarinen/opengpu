@@ -1,7 +1,7 @@
 {
   "candidate": true,
-  "app": "e2953154dff458d69c42233a86b4b1f36435e7f1",
-  "fgpu": "b1aa3f7089ff72ab3792f3368fc3f523b6abb9c0",
+  "app": "33c869ebd41b545a1e764fbc86e4688804326e01",
+  "fgpu": "c67b734e2e46cc3a93ddabb4c1a7448b2072c900",
   "requires": "WebGPU",
   "provider": "learned temporal reconstruction + late-latched reprojection"
 }
