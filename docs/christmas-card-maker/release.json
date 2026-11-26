@@ -5,7 +5,7 @@
   "publisher": "Timo Saarinen",
   "variant": "web-free",
   "status": "early-access",
-  "app": "7a8eb9478768e211b115d381f522a8ecda0d978b",
+  "app": "fbad251d0d1214c6579d2cf7fd73fc8d7165ee9b",
   "fgpu": "4a2a5a6eeacdf194a9ade2323a65a2139e14e843",
   "scenes": [
     {
@@ -92,14 +92,14 @@
   ],
   "files": {
     "main.mjs": {
-      "bytes": 14732,
-      "gzipBytes": 5985,
-      "sha256": "292511a8474f52af472c4e9d940666326f9ea10ce54f5ab65f91689ed1d61d27"
+      "bytes": 14809,
+      "gzipBytes": 6007,
+      "sha256": "a27b3ac509316a4a927864a3ff9370504c384f907ffaab15dcbe3b33a9e9fae8"
     },
     "cottage-worker.mjs": {
-      "bytes": 4853,
-      "gzipBytes": 2182,
-      "sha256": "3be98e5856d58d215393352513ad83ac76cdb316e604e4f9b24b0f64a021b809"
+      "bytes": 4914,
+      "gzipBytes": 2213,
+      "sha256": "383af4b607326fe35407b9701bc1f15b2f99e99439af2df0f3c331111edbd33c"
     },
     "cottage.mjs": {
       "bytes": 41401,
@@ -107,14 +107,14 @@
       "sha256": "06af3e4f810a810432bbff32535fce88173ff4052fdef1e34485858aa479b79d"
     },
     "style.css": {
-      "bytes": 3088,
-      "gzipBytes": 1255,
-      "sha256": "730ca22f191e3c6bcee473700cfef18c696768f17a1e8ab35454eb39fe941f9f"
+      "bytes": 3986,
+      "gzipBytes": 1500,
+      "sha256": "6855b9ae74a499b6114bc3e6d78ebb027527352ab7a639213b3ac52384056815"
     },
     "editor.html": {
-      "bytes": 1533,
-      "gzipBytes": 773,
-      "sha256": "ff632d896fd5b2e5fc31c9784e3be74cf6d09cedffc3777695d0066f4180cff8"
+      "bytes": 1762,
+      "gzipBytes": 873,
+      "sha256": "fabfc287f93c96cd5e3466165674b1198350cf863c8ff10772cd4732bc5f4aa4"
     },
     "privacy.html": {
       "bytes": 1187,
@@ -132,14 +132,19 @@
       "sha256": "fd523e9ec53fedc6b45f6959a5d8796e3e67693825b17cb70381dc3f49d510b1"
     },
     "cottage.wasm": {
-      "bytes": 935828,
-      "gzipBytes": 412864,
-      "sha256": "398d44af53bba59a3943e717141812d6c096b234001fb2b323ad6f2da16d65fa"
+      "bytes": 937078,
+      "gzipBytes": 413666,
+      "sha256": "d7c8c0cedd371b0d583d0705dbcb95b1d4786d5b64a3835f8076476479de90cf"
     },
     "poster.webp": {
       "bytes": 18684,
       "gzipBytes": 18712,
       "sha256": "1b5762fa17cd518be57b555ecfd6702951713d15b103a6ba62586187f77cea1c"
+    },
+    "poster-portrait.webp": {
+      "bytes": 13496,
+      "gzipBytes": 13519,
+      "sha256": "7e5111c9d6860971b2a4d841523da0fe1c615b89af5a83a163683c3b281472b7"
     },
     "forest/forest_ground.pack": {
       "bytes": 10562617,
@@ -182,7 +187,7 @@
       "sha256": "1231e98935c1461e6af66b42595eaaa9c7bf3b69245ca608f80a94c009956a4c"
     }
   },
-  "runtime": "v0.1.0-8b860eb222dcd6fc",
-  "packageSha256": "8b860eb222dcd6fc228db7498ea553b729885d65ce61e6829daa73cecd1402a4",
-  "landingSha256": "aabdd6adff4601ce88ac4ed39a3e5297e810bf1f31479ed1e7169d5357c04780"
+  "runtime": "v0.1.0-0bfe22dccf67aee0",
+  "packageSha256": "0bfe22dccf67aee08fe0d11e6fe0927c4e66dfdaea310541bc70de0666c54994",
+  "landingSha256": "22c6ad00f9af84e1474f65c1007e2d343269386f16f4ad15f6bc91e3cb27ed29"
 }

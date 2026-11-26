@@ -1,0 +1,74 @@
+var Ne=Object.defineProperty;var ce=(r,e)=>()=>(r&&(e=r(r=0)),e);var We=(r,e)=>{for(var i in e)Ne(r,i,{get:e[i],enumerable:!0})};var R,g=ce(()=>{R=["Cottage","Riverlight"]});var de={};We(de,{createCanvasPainter:()=>Re});function le(r,e,i,t,n){r.width!==t&&(r.width=t),r.height!==n&&(r.height=n),e.putImageData(new ImageData(new Uint8ClampedArray(i),t,n),0,0)}function Re(){return{attach(r){let e=r.getContext("2d",{alpha:!1});if(!e)throw new Error("The browser could not create a Canvas2D editor.");let i=document.createElement("canvas"),t=document.createElement("canvas"),n=i.getContext("2d",{alpha:!1}),u=t.getContext("2d");return{draw(o,f,h,y){le(i,n,o.buffer,o.imageWidth,o.imageHeight),o.overlay&&le(t,u,o.overlay,f,h),e.setTransform(r.width/f,0,0,r.height/h,0,0),e.fillStyle="#080d14",e.fillRect(0,0,f,h),e.drawImage(i,...y),e.drawImage(t,0,0)},dispose(){i.width=i.height=t.width=t.height=1}}},dispose(){}}}var fe=ce(()=>{g()});g();g();var z=class{constructor(e,i,{onStatus:t=()=>{},onError:n=()=>{},onCompile:u=()=>{},frameInput:o=()=>({}),maxFps:f=0,presenter:h=null}={}){this.canvas=e,this.presenter=h,this.context=h?null:e.getContext("2d",{alpha:!1}),this.onStatus=t,this.onError=n,this.onCompile=u,this.frameInput=o,this.minimumFrameMs=Number.isFinite(f)&&f>0?1e3/f:0,this.lastRequest=-1/0,this.worker=new Worker(i,{type:"module"}),this.width=640,this.height=360,this.generation=0,this.frame=0,this.running=!1,this.busy=!1,this.ready=!1,this.compileId=0,this.origin=performance.now(),this.elapsed=0,this.info={},this.worker.onmessage=({data:y})=>this.receive(y),this.worker.onerror=y=>{this.stop(),this.busy=!1,this.onError(y.message)}}init(e={}){this.worker.postMessage({type:"init",...e})}compile(e){this.worker.postMessage({type:"compile",source:e,id:++this.compileId})}resize(e,i){if(!Number.isInteger(e)||!Number.isInteger(i)||e<1||i<1||e>1920||i>1080)throw new Error("Resolution must fit within 1920 \xD7 1080");this.width=e,this.height=i,this.generation++,this.worker.postMessage({type:"cancel"})}resume(){this.running||(this.origin=performance.now(),this.lastRequest=-1/0,this.running=!0,this.schedule())}stop(){this.running&&(this.elapsed+=(performance.now()-this.origin)/1e3),this.running=!1,this.generation++,this.worker.postMessage({type:"cancel"}),cancelAnimationFrame(this.raf),clearTimeout(this.timer)}schedule(){if(!this.running||!this.ready||this.busy)return;let e=i=>{if(!this.running||this.busy)return;if(this.presenter?.pending>=2||i-this.lastRequest+.1<this.minimumFrameMs){this.schedule();return}this.lastRequest=i;let t=this.elapsed+(performance.now()-this.origin)/1e3;this.busy=!0;let n={...this.frameInput({time:t,frame:this.frame}),type:"frame",width:this.width,height:this.height,generation:this.generation,time:t,frame:this.frame++,buffer:this.buffer};this.buffer=void 0,this.worker.postMessage(n,n.buffer?[n.buffer]:[])};if(this.presenter){let i=Math.max(this.presenter.pending>=2?4:0,this.minimumFrameMs-(performance.now()-this.lastRequest));this.timer=setTimeout(()=>e(performance.now()),i)}else this.raf=requestAnimationFrame(e)}receive(e){if(e.type==="ready")this.info=e,this.ready=!0,this.onStatus(e),this.schedule();else if(e.type==="compiled")this.onCompile(e);else if(e.type==="error")(e.request==="frame"||e.request==="init")&&(this.busy=!1,this.stop()),this.onError(e.message,e);else if(e.type==="frame"){if(this.busy=!1,this.buffer=e.buffer,!e.cancelled&&e.generation===this.generation){let i=performance.now();if(this.presenter)try{this.presenter.stats&&(this.presenter.stats.renderCpuMs=e.renderMs),this.presenter.submit(e)}catch(t){this.stop(),this.onError(t.message);return}else(this.canvas.width!==e.width||this.canvas.height!==e.height)&&(this.canvas.width=e.width,this.canvas.height=e.height),this.context.putImageData(new ImageData(new Uint8ClampedArray(e.buffer),e.width,e.height),0,0);this.onStatus({...this.info,...e,presentMs:performance.now()-i})}this.schedule()}}destroy(){return this.disposing?this.disposing:(this.stop(),this.buffer=void 0,this.ready=!1,this.disposing=new Promise(e=>{let i=()=>{clearTimeout(t),this.worker.onmessage=null,this.worker.onerror=null,this.worker.terminate(),e()},t=setTimeout(i,3e3);this.worker.onmessage=({data:n})=>{n.type==="disposed"&&i()},this.worker.onerror=i,this.worker.postMessage({type:"dispose"})}),this.disposing)}};g();var qe=`
+struct Extent {
+  view: vec2f,
+  pixel: vec2f,
+}
+struct Quad {
+  rect: vec4f,
+  uv: vec4f,
+  clip: vec4f,
+  color: u32,
+  kind: u32,
+  scale: f32,
+  reserved: f32,
+}
+@group(0) @binding(0) var linear: sampler;
+@group(0) @binding(1) var scene: texture_2d<f32>;
+@group(0) @binding(2) var atlas: texture_2d<f32>;
+@group(0) @binding(3) var<uniform> extent: Extent;
+@group(0) @binding(4) var<storage, read> quads: array<Quad>;
+
+struct SceneVertex {
+  @builtin(position) position: vec4f,
+  @location(0) uv: vec2f,
+}
+@vertex fn sceneVertex(@builtin(vertex_index) i: u32) -> SceneVertex {
+  let uv = vec2f(f32((i << 1u) & 2u), f32(i & 2u));
+  return SceneVertex(vec4f(uv * vec2f(2., -2.) + vec2f(-1., 1.), 0., 1.), uv);
+}
+@fragment fn scenePixel(v: SceneVertex) -> @location(0) vec4f {
+  return vec4f(textureSample(scene, linear, v.uv).rgb, 1.);
+}
+
+struct UiVertex {
+  @builtin(position) position: vec4f,
+  @location(0) point: vec2f,
+  @location(1) @interpolate(flat) index: u32,
+}
+@vertex fn uiVertex(@builtin(vertex_index) i: u32, @builtin(instance_index) instance: u32) -> UiVertex {
+  let q = quads[instance];
+  let corner = vec2f(f32(i & 1u), f32(i >> 1u));
+  let start = max(q.rect.xy, q.clip.xy);
+  let end = max(start, min(q.rect.zw, q.clip.zw));
+  let point = mix(start, end, corner);
+  let ndc = point / extent.view * vec2f(2., -2.) + vec2f(-1., 1.);
+  return UiVertex(vec4f(ndc, 0., 1.), point, instance);
+}
+
+fn median(c: vec3f) -> f32 {
+  return max(min(c.r, c.g), min(max(c.r, c.g), c.b));
+}
+
+@fragment fn uiPixel(v: UiVertex) -> @location(0) vec4f {
+  let q = quads[v.index];
+  let size = q.rect.zw - q.rect.xy;
+  var coverage = 0.;
+  if (q.kind == 0u) {
+    let halfSize = size * .5;
+    let radius = min(q.uv.x, min(halfSize.x, halfSize.y));
+    let delta = abs(v.point - q.rect.xy - halfSize) - halfSize + radius;
+    let distance = length(max(delta, vec2f(0.))) + min(max(delta.x, delta.y), 0.) - radius;
+    coverage = clamp(.5 - distance / extent.pixel.y, 0., 1.);
+  } else {
+    let offsets = array(vec2f(-.375, -.125), vec2f(-.125, .375),
+                        vec2f(.125, -.375), vec2f(.375, .125));
+    for (var i = 0u; i < 4u; i++) {
+      let xy = v.point + offsets[i] * extent.pixel;
+      let uv = mix(q.uv.xy, q.uv.zw, (xy - q.rect.xy) / size);
+      let distance = median(textureSampleLevel(atlas, linear, uv, 0.).rgb);
+      coverage += .25 * clamp((distance - .5) * q.scale * 2. / extent.pixel.y + .5, 0., 1.);
+    }
+  }
+  return unpack4x8unorm(q.color) * coverage;
+}
+`;async function ue(r){let e=navigator.gpu,i=await e?.requestAdapter();if(!i)throw new Error("A WebGPU adapter is required for the editor.");let t=await i.requestDevice(),n=!1;t.lost.then(u=>{n||r(u.message||"The WebGPU device was lost.")});try{let ne=function(l,d,b,U){t.queue.writeTexture({texture:l},d,{bytesPerRow:b*4},[b,U])},se=function(l,d){return t.createTexture({size:[l,d],format:"rgba8unorm",usage:GPUTextureUsage.TEXTURE_BINDING|GPUTextureUsage.COPY_DST})},Ee=function(l,d,b){T?.destroy(),T=se(d,b),ne(T,l,d,b),O=void 0},xe=function(l){let d=l.getContext("webgpu");if(!d)throw new Error("The browser could not create a WebGPU canvas.");return d.configure({device:t,format:u,alphaMode:"opaque"}),{draw(b,U,ae,[ve,be,Se,Me]){let{buffer:_e,imageWidth:$,imageHeight:j,commands:q}=b;(!x||x.width!==$||x.height!==j)&&(x?.destroy(),x=se($,j),ie=t.createBindGroup({layout:h.getBindGroupLayout(0),entries:[{binding:0,resource:te},{binding:1,resource:x.createView()}]})),ne(x,_e,$,j);let H=l.width/U,Y=l.height/ae,oe=t.createCommandEncoder(),p=oe.beginRenderPass({colorAttachments:[{view:d.getCurrentTexture().createView(),loadOp:"clear",storeOp:"store",clearValue:[.032,.049,.077,1]}]});p.setViewport(ve*H,be*Y,Se*H,Me*Y,0,1),p.setPipeline(h),p.setBindGroup(0,ie),p.draw(3),q?.byteLength&&((!v||v.size<q.byteLength)&&(v?.destroy(),v=t.createBuffer({size:Math.max(q.byteLength,(v?.size??0)*2,16*1024),usage:GPUBufferUsage.STORAGE|GPUBufferUsage.COPY_DST}),O=void 0),O??=t.createBindGroup({layout:y.getBindGroupLayout(0),entries:[{binding:0,resource:te},{binding:2,resource:T.createView()},{binding:3,resource:{buffer:re}},{binding:4,resource:{buffer:v}}]}),t.queue.writeBuffer(re,0,new Float32Array([U,ae,1/H,1/Y])),t.queue.writeBuffer(v,0,q),p.setViewport(0,0,l.width,l.height,0,1),p.setPipeline(y),p.setBindGroup(0,O),p.draw(4,q.byteLength/64)),p.end(),t.queue.submit([oe.finish()])},dispose(){d.unconfigure()}}},u=e.getPreferredCanvasFormat(),o=t.createShaderModule({code:qe}),f={srcFactor:"one",dstFactor:"one-minus-src-alpha"},[h,y]=await Promise.all([t.createRenderPipelineAsync({layout:"auto",vertex:{module:o,entryPoint:"sceneVertex"},fragment:{module:o,entryPoint:"scenePixel",targets:[{format:u}]}}),t.createRenderPipelineAsync({layout:"auto",primitive:{topology:"triangle-strip"},vertex:{module:o,entryPoint:"uiVertex"},fragment:{module:o,entryPoint:"uiPixel",targets:[{format:u,blend:{color:f,alpha:f}}]}})]),te=t.createSampler({minFilter:"linear",magFilter:"linear"}),re=t.createBuffer({size:16,usage:GPUBufferUsage.UNIFORM|GPUBufferUsage.COPY_DST}),x,ie,T,O,v;return{attach:xe,setAtlas:Ee,dispose(){n=!0,t.destroy()}}}catch(u){throw n=!0,t.destroy(),u}}var M=document.documentElement,pe=document.querySelector(".editor"),c=document.querySelector("canvas"),X=document.querySelector(".controls"),s=X.querySelector("input"),Ae=document.querySelector("footer > [role=status]"),J=document.querySelector("#upgrade");var D=R,Be=new URLSearchParams(location.search),ke=Be.get("backend")??"auto",A=!0,_,S,G;var Q,a,w,C=!1,m=!1;var Pe=!1;var P=!1,B=!1,N,I;function E(r){Ae.textContent=r}function ge(){return D[a.scene]}function me(r,[e,i,t,n]){Object.assign(r.style,{left:`${e}px`,top:`${i}px`,width:`${t}px`,height:`${n}px`})}var k=new Map;function we(r){r.disabled=r.dataset.disabled==="true",C?r.setAttribute("aria-disabled","true"):r.removeAttribute("aria-disabled")}function L(r){C=r;for(let e of k.values())we(e)}function Fe(r){let e=new Set;for(let i of r.controls){let t=k.get(i.id);t||(t=document.createElement("button"),t.type="button",t.addEventListener("click",()=>{Z(i.id)}),k.set(i.id,t),X.insertBefore(t,s)),t.textContent=i.label,me(t,i.box),t.hidden=!1,t.dataset.disabled=String(i.state===2),we(t),i.state===1?t.setAttribute("aria-pressed","true"):t.removeAttribute("aria-pressed"),e.add(i.id)}for(let[i,t]of k)t.hidden=!e.has(i);if(r.field){let i=s.hidden;me(s,r.field),s.hidden=!1,s.setAttribute("aria-invalid",String(r.textError)),i&&(s.value=r.draft,s.focus(),s.select())}else s.hidden=!0,s.value=""}function ye(){let{width:r,height:e}=pe.getBoundingClientRect(),i=4096;return{width:Math.min(i,Math.max(320,Math.round(r))),height:Math.min(i,Math.max(256,Math.round(e))),touch:matchMedia("(pointer: coarse)").matches}}function Te(r,e){let i=Math.min(devicePixelRatio,4096/Math.max(r,e)),t=Math.max(1,Math.round(r*i)),n=Math.max(1,Math.round(e*i));c.width!==t&&(c.width=t),c.height!==n&&(c.height=n)}function Oe(r){return m?Promise.reject(new Error("The editor has closed.")):w?Promise.reject(new Error("The renderer is already drawing.")):new Promise((e,i)=>{w={frame:r,resolve:e,reject:i},_.resume()})}async function V(r={}){let e=await Oe({view:ye(),chromeHidden:B,...r});a=e;{e.atlas&&S.setAtlas(e.atlas.buffer,e.atlas.width,e.atlas.height);let{width:i,height:t,rect:n}=e.view;Te(i,t),G.draw(e,i,t,n)}return await new Promise(i=>requestAnimationFrame(()=>requestAnimationFrame(i))),A&&Fe(e),M.dataset.state="drawn",M.dataset.scene=D[e.scene],M.dataset.daylight=String(e.daylight),M.dataset.revision=String(e.revision),M.dataset.previewSamples=String(e.previewSamples),e}async function Z(r,e){let i=k.get(r);if(m||C||i?.disabled)return;if(i?.textContent==="Image"||i?.textContent==="Render video"){J.showModal();return}if(i?.textContent==="Privacy policy"||i?.textContent==="Support"){let n=i.textContent==="Support"?"support":"privacy";window.open(new URL(`./${n}.html`,location.href),"_blank","noopener");return}let t={id:r,...e};if(r===a?.done){if(new TextEncoder().encode(s.value).length>=128){s.setAttribute("aria-invalid","true"),E("That text is too long.");return}t.text=s.value}i?.textContent&&D.includes(i.textContent)&&E("Drawing scene\u2026"),L(!0);try{N&&await N,(await V({action:t})).textError?(E("Use one non-empty line for overlay text. Candle greetings must fit the available letters."),s.focus()):E(ge())}catch(n){E(n.message)}finally{L(!1),F(),W()}}function F(){!P||C||m||!a||N||(P=!1,L(!0),V().catch(r=>E(r.message)).finally(()=>{L(!1),F(),W()}))}function he(){return!m&&!C&&!P&&!document.hidden&&!!a?.moreSamples&&!a.field&&!J.open}function W(){N||I||!he()||(I=setTimeout(()=>{I=void 0,he()&&(N=V({refine:!0}).catch(r=>{m||console.warn("Preview refinement:",r.message),a&&(a.moreSamples=!1)}).finally(()=>{N=void 0,F(),W()}))},450))}s.addEventListener("keydown",r=>{r.isComposing||(r.key==="Enter"||r.key==="Escape")&&(r.preventDefault(),Z(r.key==="Enter"?a.done:a.cancel))});{document.addEventListener("visibilitychange",W),J.addEventListener("close",W);let r=document.querySelector("#toggle-controls");r.addEventListener("click",()=>{!a||a.field||C||m||(B=!B,r.textContent=B?"Show controls":"Hide controls",P=!0,F())})}function ee(){Q?.disconnect(),clearTimeout(I),w?.reject(new Error("The editor has closed.")),w=void 0,_?.destroy(),G?.dispose(),S?.dispose()}function K(r){m||(m=!0,M.dataset.state="error",E(r),X.hidden=!0,ee())}addEventListener("pagehide",({persisted:r})=>{r||(m=!0,ee())});try{let r=ke;if(r!=="canvas2d")try{S=await ue(K),G=S.attach(c),r="webgpu"}catch(e){if(r==="webgpu")throw e;S?.dispose();let i=c.cloneNode();c.replaceWith(i),c=i,r="canvas2d"}if(r==="canvas2d"){let{createCanvasPainter:e}=await Promise.resolve().then(()=>(fe(),de));S=e(),G=S.attach(c)}c.addEventListener("click",e=>{B||Z(-1,{x:e.offsetX,y:e.offsetY})}),m?ee():(c.dataset.backend=r,A&&(c.dataset.ui=r),await new Promise((e,i)=>{_=new z(c,new URL("./cottage-worker.mjs",import.meta.url),{presenter:{submit(){}},frameInput:()=>w.frame,onStatus(t){if(t.type==="ready")_.resize(t.width,t.height),e();else if(t.type==="frame"){_.stop();let n=w;w=void 0,n.resolve(t)}},onError(t){let n=w;w=void 0,n?n.reject(new Error(t)):a?K(t):i(new Error(t))}}),_.init({editor:A,software:r==="canvas2d",portrait:matchMedia("(pointer: coarse) and (orientation: portrait)").matches})}),await V(),E(ge()),Q=new ResizeObserver(()=>{let e=a?.view,{width:i,height:t}=ye();(!A||!e||e.width!==i||e.height!==t)&&(P=!0,F())}),Q.observe(pe),W())}catch(r){K(r.message)}
