@@ -1,0 +1,188 @@
+{
+  "version": "0.1.0",
+  "buildNumber": "1",
+  "product": "3D Christmas Card Maker 2026",
+  "publisher": "Timo Saarinen",
+  "variant": "web-free",
+  "status": "early-access",
+  "app": "9620f41fb20993bb1227d669ab2ad710ba4ce6c5",
+  "fgpu": "4a2a5a6eeacdf194a9ade2323a65a2139e14e843",
+  "scenes": [
+    {
+      "id": 0,
+      "name": "Cottage"
+    },
+    {
+      "id": 1,
+      "name": "Riverlight"
+    }
+  ],
+  "deferred": [
+    "forest/forest_ground.pack",
+    "fonts/GreatVibes-Regular.mtsdf.json",
+    "fonts/GreatVibes-Regular.mtsdf.png"
+  ],
+  "wasmExports": [
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V"
+  ],
+  "previewEntrypoints": [
+    "_snowman_web_atlas",
+    "_snowman_web_atlas_height",
+    "_snowman_web_atlas_width",
+    "_snowman_web_control_box",
+    "_snowman_web_control_count",
+    "_snowman_web_control_label",
+    "_snowman_web_control_state",
+    "_snowman_web_daylight",
+    "_snowman_web_dispose",
+    "_snowman_web_draft",
+    "_snowman_web_draw_editor",
+    "_snowman_web_draw_preview",
+    "_snowman_web_edit_cancel",
+    "_snowman_web_edit_done",
+    "_snowman_web_editing",
+    "_snowman_web_editor_action",
+    "_snowman_web_editor_init",
+    "_snowman_web_field",
+    "_snowman_web_free_overlay",
+    "_snowman_web_greeting_font",
+    "_snowman_web_init",
+    "_snowman_web_open_forest",
+    "_snowman_web_portrait",
+    "_snowman_web_quad_count",
+    "_snowman_web_quads",
+    "_snowman_web_raster_overlay",
+    "_snowman_web_revision",
+    "_snowman_web_scene",
+    "_snowman_web_text_error",
+    "_snowman_web_text_input"
+  ],
+  "files": {
+    "main.mjs": {
+      "bytes": 14260,
+      "gzipBytes": 5781,
+      "sha256": "c9b9559b024d435a42777cf4437e66871bc081b002c67cb4fd638f79ab0de22c"
+    },
+    "cottage-worker.mjs": {
+      "bytes": 4707,
+      "gzipBytes": 2091,
+      "sha256": "bfc45fa2af677e7efc85141dbd22d7d192c561c72651afeae4abe1b27bf47bd5"
+    },
+    "cottage.mjs": {
+      "bytes": 40331,
+      "gzipBytes": 14062,
+      "sha256": "447c800c4c59ae59bc1813f3c79f56c15714a64e55afb8cee31fd9f2d7cdc5d6"
+    },
+    "style.css": {
+      "bytes": 3088,
+      "gzipBytes": 1255,
+      "sha256": "730ca22f191e3c6bcee473700cfef18c696768f17a1e8ab35454eb39fe941f9f"
+    },
+    "editor.html": {
+      "bytes": 1533,
+      "gzipBytes": 773,
+      "sha256": "ff632d896fd5b2e5fc31c9784e3be74cf6d09cedffc3777695d0066f4180cff8"
+    },
+    "privacy.html": {
+      "bytes": 1187,
+      "gzipBytes": 640,
+      "sha256": "1403c96e067c0e1c2b4b6a7c7a305fd9c1927a00baf05f03c3c80f537c0397fc"
+    },
+    "support.html": {
+      "bytes": 932,
+      "gzipBytes": 553,
+      "sha256": "dc3e815307b0f0628638be91bb2a0747c0763d9e8a54c2eb5ffc88c5b55e33b5"
+    },
+    "credits.html": {
+      "bytes": 1385,
+      "gzipBytes": 768,
+      "sha256": "fd523e9ec53fedc6b45f6959a5d8796e3e67693825b17cb70381dc3f49d510b1"
+    },
+    "cottage.wasm": {
+      "bytes": 926004,
+      "gzipBytes": 408342,
+      "sha256": "6888e7c5d9af16e413ceb2d953d062349393716a7aa37e8964048aeee0d14a5b"
+    },
+    "poster.webp": {
+      "bytes": 46802,
+      "gzipBytes": 46835,
+      "sha256": "c3b29e033678dfa59082d51845ebfdb3c4aa80b8fe7780dde2af59e0a49d1fa7"
+    },
+    "forest/forest_ground.pack": {
+      "bytes": 10562617,
+      "gzipBytes": 10563115,
+      "sha256": "1a41c31b425f4a35f52d90287c029d568640105f1325329693187d739cb6b68b"
+    },
+    "fonts/Lato-Regular.mtsdf.json": {
+      "bytes": 487796,
+      "gzipBytes": 35555,
+      "sha256": "aee4c91298ad79bd07a2fc200b55d3c6967a58e339044f7e341585c0c1717a82"
+    },
+    "fonts/Lato-Regular.mtsdf.png": {
+      "bytes": 313236,
+      "gzipBytes": 307815,
+      "sha256": "67d2178aa2ec71321bb105a2f2c6121ea3645e5b38bd98d3fa4ceaf486b351e3"
+    },
+    "fonts/lato-OFL.txt": {
+      "bytes": 4407,
+      "gzipBytes": 1989,
+      "sha256": "74ba064d03f1f1c4a952da936c3eb71866c34404916734de3cae73b34357e59e"
+    },
+    "fonts/GreatVibes-Regular.mtsdf.json": {
+      "bytes": 73836,
+      "gzipBytes": 9256,
+      "sha256": "d3170466143bff2eb14af1db0c8e0e0b44418f18e2c6b52e72c001072817f5d0"
+    },
+    "fonts/GreatVibes-Regular.mtsdf.png": {
+      "bytes": 1187307,
+      "gzipBytes": 1163897,
+      "sha256": "68b1b9a24a71ca987fe2f39230b2653a491fef37df6318d04559372220221706"
+    },
+    "fonts/greatvibes-OFL.txt": {
+      "bytes": 4399,
+      "gzipBytes": 1976,
+      "sha256": "61093a21f5e63dedf54222b3c09997e54c0fe43e3851d21386e02ddcbc246d49"
+    },
+    "notices.txt": {
+      "bytes": 13336,
+      "gzipBytes": 4335,
+      "sha256": "1231e98935c1461e6af66b42595eaaa9c7bf3b69245ca608f80a94c009956a4c"
+    }
+  },
+  "runtime": "v0.1.0-d1de2a898be293a4",
+  "packageSha256": "d1de2a898be293a44d4b6a153aa800bc3c52ddf10d0a15f488cf434b1046206d",
+  "landingSha256": "4776158926102b8d497bde76a90c585456c289b78c186661d1418b202eb6fbcf"
+}

@@ -43,3 +43,7 @@ ESPCN reconstruction and motion-guided frame interpolation; it is not NVIDIA DLS
 or AMD FSR. Model provenance and the Apache-2.0 license ship under
 `docs/tuonela/models/`. `docs/tuonela/release.json` identifies the exact app and
 shared-library revisions. Quality and performance are still under evaluation.
+
+## 3D Christmas Card Maker 2026
+
+Try the [free early-access browser demo](https://timosaarinen.github.io/opengpu/christmas-card-maker/). Snowman generates the static bundle in `docs/christmas-card-maker/`. Its release manifest records the source revisions and file hashes.
