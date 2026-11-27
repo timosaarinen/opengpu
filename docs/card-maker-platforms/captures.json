@@ -2107,5 +2107,152 @@
       "date": "2026-11-27T16:48:54+02:00",
       "label": "Web performance preview"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/subtle-phase-30-844af0ba321bff90.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/subtle-sway-c357a1a45bff3066.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/subtle-phase-100-8efe8201fb8d095b.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/subtle-phase-170-0651feb136f2c5b6.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/medium-phase-30-220382e75e3a1213.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/medium-sway-25ca725d2c0eaba4.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/medium-phase-100-ae3f2d07970547ad.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/medium-phase-170-73ee4337175143eb.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/pronounced-phase-30-43767acd23d4a91c.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/pronounced-sway-453e2ba18d15cccb.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/pronounced-phase-100-d3186b90105dc083.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/df34196a09a85563ce0419164bc1509cf4801cee/internal/images/card-maker-studio-shine-comparison-20261127/pronounced-phase-170-a6eef60763b6506d.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "42e9179",
+      "date": "2026-11-27T17:17:40+02:00",
+      "label": "Studio shine comparison"
+    }
   }
 ]
