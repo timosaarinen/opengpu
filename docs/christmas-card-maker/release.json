@@ -5,7 +5,7 @@
   "publisher": "Timo Saarinen",
   "variant": "web-free",
   "status": "early-access",
-  "app": "e281daf1d8bf3dacb4071b98c410b3718a80156c",
+  "app": "8c826d12458a7c4ccb5ac44f281ab2d5451879b9",
   "fgpu": "4a2a5a6eeacdf194a9ade2323a65a2139e14e843",
   "scenes": [
     {
@@ -92,14 +92,14 @@
   ],
   "files": {
     "main.mjs": {
-      "bytes": 14827,
-      "gzipBytes": 6018,
-      "sha256": "ab51811dcb53afa776374ebc13c80e34fe0e7c1ae2298829b89c9231269f5c9d"
+      "bytes": 15120,
+      "gzipBytes": 6121,
+      "sha256": "238da3d3c670454852ee46b5ac1cecb8a000457c0b55a0c91552c602abdb10fa"
     },
     "cottage-worker.mjs": {
-      "bytes": 4914,
-      "gzipBytes": 2213,
-      "sha256": "c370a44b7377b04a3913a037bbedebb66a0f23cf051c4fae6087d66492384d8b"
+      "bytes": 5175,
+      "gzipBytes": 2367,
+      "sha256": "58c3a255047f7f99b1b2cfae5c48cbbfdc1c5ac10e6c505fd7f68c6975aa619f"
     },
     "cottage.mjs": {
       "bytes": 41401,
@@ -108,8 +108,8 @@
     },
     "style.css": {
       "bytes": 4107,
-      "gzipBytes": 1546,
-      "sha256": "bc9ab837dedb556ff51c2fb4ac477864ad22cc5e1da72201449888612ba78726"
+      "gzipBytes": 1544,
+      "sha256": "cf9d114d2ab86587dda80d7cd9ec85563a5dffb69c198dc5eccb706a95b6bdff"
     },
     "editor.html": {
       "bytes": 1789,
@@ -132,19 +132,19 @@
       "sha256": "fd523e9ec53fedc6b45f6959a5d8796e3e67693825b17cb70381dc3f49d510b1"
     },
     "cottage.wasm": {
-      "bytes": 937078,
-      "gzipBytes": 413660,
-      "sha256": "142ed3d627e21d85fe379c83fc3aee6f176b10a6449b0b642083e563e0681772"
+      "bytes": 939452,
+      "gzipBytes": 414831,
+      "sha256": "e7805136567a37cf2dbf119d67adc5371e3d34a717ee3db3beae16da86a4461c"
     },
     "poster.webp": {
-      "bytes": 18032,
-      "gzipBytes": 18060,
-      "sha256": "08184d48bd203eaa8e5f45e4e0b23099191609d43da620437ddf7173daa0c4d6"
+      "bytes": 12300,
+      "gzipBytes": 12323,
+      "sha256": "0e0c4a8b2273ec43c79e5adc7aca5fe4efc0dadbdb044cd1cd021911a940f8db"
     },
     "poster-portrait.webp": {
-      "bytes": 13354,
-      "gzipBytes": 13377,
-      "sha256": "5814df14a399167df843ed981172d25e2c7236431d8170127733547c838ca224"
+      "bytes": 9790,
+      "gzipBytes": 9813,
+      "sha256": "6348564477983f24d6dc0248dfbd69fd2e44680c909762ae902a9767edd8435d"
     },
     "forest/forest_ground.pack": {
       "bytes": 10562617,
@@ -192,7 +192,7 @@
       "sha256": "1231e98935c1461e6af66b42595eaaa9c7bf3b69245ca608f80a94c009956a4c"
     }
   },
-  "runtime": "v1.0.0-a32f8bef6fe9d975",
-  "packageSha256": "a32f8bef6fe9d9755669d7886fc362c06fdb58ba95f8390e8a5c55acf94120aa",
-  "landingSha256": "bd1b96cd2a029d82859a97ed9e08c71b993d77034d336d44fd4a27b152f46f63"
+  "runtime": "v1.0.0-4b234be1612230c0",
+  "packageSha256": "4b234be1612230c05790a91f941455f39f0a84ecb28f4c440bfe0c7075c84aaa",
+  "landingSha256": "f70a3a67fd92c7ab2c6275e1a576c6d5189fff691c8f7dfee7f57bbd4276622e"
 }
