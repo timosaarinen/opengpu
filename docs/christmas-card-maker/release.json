@@ -1,11 +1,11 @@
 {
-  "version": "0.1.0",
-  "buildNumber": "1",
+  "version": "1.0.0",
+  "buildNumber": "2",
   "product": "3D Christmas Card Maker 2026",
   "publisher": "Timo Saarinen",
   "variant": "web-free",
   "status": "early-access",
-  "app": "73f29ad93cd6bee09712a91d35e741e92866f13e",
+  "app": "e281daf1d8bf3dacb4071b98c410b3718a80156c",
   "fgpu": "4a2a5a6eeacdf194a9ade2323a65a2139e14e843",
   "scenes": [
     {
@@ -93,13 +93,13 @@
   "files": {
     "main.mjs": {
       "bytes": 14827,
-      "gzipBytes": 6019,
-      "sha256": "2119a07c8680a497d9f893ed5edc577aedc2b675c6856a16aff26134fcaa549e"
+      "gzipBytes": 6018,
+      "sha256": "ab51811dcb53afa776374ebc13c80e34fe0e7c1ae2298829b89c9231269f5c9d"
     },
     "cottage-worker.mjs": {
       "bytes": 4914,
       "gzipBytes": 2213,
-      "sha256": "383af4b607326fe35407b9701bc1f15b2f99e99439af2df0f3c331111edbd33c"
+      "sha256": "c370a44b7377b04a3913a037bbedebb66a0f23cf051c4fae6087d66492384d8b"
     },
     "cottage.mjs": {
       "bytes": 41401,
@@ -133,8 +133,8 @@
     },
     "cottage.wasm": {
       "bytes": 937078,
-      "gzipBytes": 413663,
-      "sha256": "260bed222b75d7854e3f2841a61a5363ffe7a9e70c77c98457b797c0f0be9ebf"
+      "gzipBytes": 413660,
+      "sha256": "142ed3d627e21d85fe379c83fc3aee6f176b10a6449b0b642083e563e0681772"
     },
     "poster.webp": {
       "bytes": 18032,
@@ -192,7 +192,7 @@
       "sha256": "1231e98935c1461e6af66b42595eaaa9c7bf3b69245ca608f80a94c009956a4c"
     }
   },
-  "runtime": "v0.1.0-1eb2584f9428392b",
-  "packageSha256": "1eb2584f9428392b6336ae3a39e023550c7cc6aa7dbfdbc45538d4576cdbc9b4",
-  "landingSha256": "5c727b47421b8d3a4e466230382456ca523e5803f007b42fe2817b792cd869a7"
+  "runtime": "v1.0.0-a32f8bef6fe9d975",
+  "packageSha256": "a32f8bef6fe9d9755669d7886fc362c06fdb58ba95f8390e8a5c55acf94120aa",
+  "landingSha256": "bd1b96cd2a029d82859a97ed9e08c71b993d77034d336d44fd4a27b152f46f63"
 }
