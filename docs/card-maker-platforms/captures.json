@@ -767,5 +767,191 @@
       "date": "2026-11-26T20:33:48+02:00",
       "label": "Android QA"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-1080p-image-export-f536e5f1413cf36b.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-1080p-video-early-94e5053abb9fb940.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-1080p-video-mid-7871efdf7136e0cd.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-phone-image-export-4b7a9d7a7c9ea195.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-phone-video-early-d6e2b308c0aecb1e.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/candidate-phone-video-mid-36b217d38800c34d.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "Export preview QA",
+      "date": "2026-11-27T10:38:27+02:00",
+      "revision": "05fe487",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-1080p-image-export-9ef1cfc10df80d05.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-1080p-video-early-40a988dd77e66437.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-1080p-video-mid-6147bd39895ee75b.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-phone-image-export-935cd53170db2247.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-phone-video-early-354dc83c6e3ff07e.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/20ac57302dbe2dd39b3056f651a2d5e523f3c639/internal/images/snowman-export-preview-32/rc4-phone-video-mid-0bf00f28d775087e.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 780,
+    "height": 1688,
+    "date": "2026-11-27",
+    "build": {
+      "number": 4,
+      "label": "RC4",
+      "date": "2026-11-27T07:23:53+02:00",
+      "revision": "d04b41a",
+      "version": "1.0.0"
+    },
+    "device": "Phone-size Windows viewport"
   }
 ]
