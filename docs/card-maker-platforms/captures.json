@@ -1573,5 +1573,90 @@
       "date": "2026-11-27T12:21:19+02:00",
       "label": "#29 preview"
     }
+  },
+  {
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 1920,
+    "height": 1080,
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4305c983568d749bbc5e3f8ee9f241fb276ef7d3/internal/images/card-maker-29-preview-b566605/canvas2d-settled-35a466c6d26fd297.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b566605",
+      "date": "2026-11-27T13:59:42+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 780,
+    "height": 1688,
+    "viewport": [
+      390,
+      844
+    ],
+    "device": "iPhone-sized Chromium emulation",
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4305c983568d749bbc5e3f8ee9f241fb276ef7d3/internal/images/card-maker-29-preview-b566605/canvas2d-settled-phone-653c26ebc5bac9f4.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b566605",
+      "date": "2026-11-27T13:59:42+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 1688,
+    "height": 780,
+    "viewport": [
+      844,
+      390
+    ],
+    "device": "iPhone-sized Chromium emulation",
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4305c983568d749bbc5e3f8ee9f241fb276ef7d3/internal/images/card-maker-29-preview-b566605/canvas2d-cottage-landscape-phone-1f31d8dbca9fb549.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b566605",
+      "date": "2026-11-27T13:59:42+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Windows",
+    "screen": "Editor",
+    "width": 900,
+    "height": 1600,
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4305c983568d749bbc5e3f8ee9f241fb276ef7d3/internal/images/card-maker-29-preview-b566605/windows-editor-900x1600-c2e757ce3cb2321b.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b566605",
+      "date": "2026-11-27T13:59:42+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Windows",
+    "screen": "Editor",
+    "width": 2560,
+    "height": 1080,
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4305c983568d749bbc5e3f8ee9f241fb276ef7d3/internal/images/card-maker-29-preview-b566605/windows-editor-2560x1080-99415fdd0a5ee1fb.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b566605",
+      "date": "2026-11-27T13:59:42+02:00",
+      "label": "#29 preview"
+    }
   }
 ]
