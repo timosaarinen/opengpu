@@ -1,12 +1,12 @@
 {
   "version": "1.0.0",
-  "buildNumber": "2",
+  "buildNumber": "29",
   "product": "3D Christmas Card Maker 2026",
   "publisher": "Timo Saarinen",
   "variant": "web-free",
   "status": "early-access",
-  "app": "8c826d12458a7c4ccb5ac44f281ab2d5451879b9",
-  "fgpu": "4a2a5a6eeacdf194a9ade2323a65a2139e14e843",
+  "app": "79035c556d5062fb24e9915974a8245e9fe0c29a",
+  "fgpu": "0e3255418c2d536a8151cfdf382884337c48d564",
   "scenes": [
     {
       "id": 0,
@@ -23,9 +23,6 @@
     "fonts/GreatVibes-Regular.mtsdf.png"
   ],
   "wasmExports": [
-    "q",
-    "r",
-    "s",
     "t",
     "u",
     "v",
@@ -56,11 +53,34 @@
     "U",
     "V",
     "W",
-    "X"
+    "X",
+    "Y",
+    "Z",
+    "_",
+    "$",
+    "aa",
+    "ba",
+    "ca",
+    "da",
+    "ea",
+    "fa",
+    "ga",
+    "ha",
+    "ia",
+    "ja",
+    "ka",
+    "la",
+    "ma",
+    "na",
+    "oa",
+    "pa",
+    "qa",
+    "ra"
   ],
   "previewEntrypoints": [
     "_snowman_web_atlas",
     "_snowman_web_atlas_height",
+    "_snowman_web_atlas_used_rows",
     "_snowman_web_atlas_width",
     "_snowman_web_control_box",
     "_snowman_web_control_count",
@@ -71,60 +91,83 @@
     "_snowman_web_draft",
     "_snowman_web_draw_editor",
     "_snowman_web_draw_preview",
+    "_snowman_web_draw_watermark",
     "_snowman_web_edit_cancel",
     "_snowman_web_edit_done",
     "_snowman_web_editing",
     "_snowman_web_editor_action",
     "_snowman_web_editor_init",
     "_snowman_web_field",
-    "_snowman_web_free_overlay",
+    "_snowman_web_finish_trace",
+    "_snowman_web_forest_band",
+    "_snowman_web_forest_decorations",
     "_snowman_web_greeting_font",
     "_snowman_web_init",
     "_snowman_web_open_forest",
-    "_snowman_web_portrait",
+    "_snowman_web_preview_film",
+    "_snowman_web_preview_long",
+    "_snowman_web_preview_short",
     "_snowman_web_quad_count",
     "_snowman_web_quads",
-    "_snowman_web_raster_overlay",
     "_snowman_web_revision",
     "_snowman_web_scene",
+    "_snowman_web_scene_base",
+    "_snowman_web_scene_buffer",
+    "_snowman_web_scene_read",
+    "_snowman_web_scene_size",
+    "_snowman_web_scene_write",
+    "_snowman_web_sheet_box",
     "_snowman_web_text_error",
-    "_snowman_web_text_input"
+    "_snowman_web_text_input",
+    "_snowman_web_trace_film",
+    "_snowman_web_trace_film_size",
+    "_snowman_web_trace_rows",
+    "_snowman_web_tracks_build",
+    "_snowman_web_tracks_layout",
+    "_snowman_web_tracks_read",
+    "_snowman_web_tracks_size",
+    "_snowman_web_uncached_scene"
   ],
   "files": {
     "main.mjs": {
-      "bytes": 15120,
-      "gzipBytes": 6121,
-      "sha256": "238da3d3c670454852ee46b5ac1cecb8a000457c0b55a0c91552c602abdb10fa"
+      "bytes": 23609,
+      "gzipBytes": 8872,
+      "sha256": "b8468efdbd51b1d9a1b9e476513c449dc85f74981358d7ba994f3ce37494fd10"
     },
     "cottage-worker.mjs": {
-      "bytes": 5175,
-      "gzipBytes": 2367,
-      "sha256": "58c3a255047f7f99b1b2cfae5c48cbbfdc1c5ac10e6c505fd7f68c6975aa619f"
+      "bytes": 12391,
+      "gzipBytes": 5196,
+      "sha256": "27d60dc094a9f40afeb5ba616ddbe6af60572ea6e6fe5e48f82174fdfb61e327"
+    },
+    "trace-worker.mjs": {
+      "bytes": 2395,
+      "gzipBytes": 1168,
+      "sha256": "984967519fbd4bedc231a7a1e465064f455db420439a0f7b8f6547e2c24fc6fe"
     },
     "cottage.mjs": {
-      "bytes": 41401,
-      "gzipBytes": 14544,
-      "sha256": "06af3e4f810a810432bbff32535fce88173ff4052fdef1e34485858aa479b79d"
+      "bytes": 42806,
+      "gzipBytes": 15068,
+      "sha256": "aea22b4ea6bc12c30a1c7faf3e21443587276d31072dc281015868489091736f"
     },
     "style.css": {
-      "bytes": 4107,
-      "gzipBytes": 1544,
-      "sha256": "cf9d114d2ab86587dda80d7cd9ec85563a5dffb69c198dc5eccb706a95b6bdff"
+      "bytes": 4802,
+      "gzipBytes": 1621,
+      "sha256": "04fcb62cffbe175b379300a6520b1790517e774f50c32bb8f378f323ee269772"
     },
     "editor.html": {
-      "bytes": 1789,
-      "gzipBytes": 925,
-      "sha256": "633f7872133d54542466f7de9651ac9e95bc8fae8fc7922c90e08efab1457127"
+      "bytes": 1917,
+      "gzipBytes": 969,
+      "sha256": "36cc2eedab4c7c95d5bf93bc9f6ff627f41a16be088fcf221615a15ee5f1f823"
     },
     "privacy.html": {
-      "bytes": 1187,
-      "gzipBytes": 640,
-      "sha256": "1403c96e067c0e1c2b4b6a7c7a305fd9c1927a00baf05f03c3c80f537c0397fc"
+      "bytes": 1026,
+      "gzipBytes": 584,
+      "sha256": "01fa03653c35d99a24fcf1ee6973e16d3848495f9f93ee1134838df362ace89d"
     },
     "support.html": {
-      "bytes": 932,
-      "gzipBytes": 553,
-      "sha256": "dc3e815307b0f0628638be91bb2a0747c0763d9e8a54c2eb5ffc88c5b55e33b5"
+      "bytes": 842,
+      "gzipBytes": 515,
+      "sha256": "b5284f9a8f85fabff13382d0189f32f986bbb7a79d0db26a672945e4b2c384eb"
     },
     "credits.html": {
       "bytes": 1385,
@@ -132,9 +175,9 @@
       "sha256": "fd523e9ec53fedc6b45f6959a5d8796e3e67693825b17cb70381dc3f49d510b1"
     },
     "cottage.wasm": {
-      "bytes": 939452,
-      "gzipBytes": 414831,
-      "sha256": "e7805136567a37cf2dbf119d67adc5371e3d34a717ee3db3beae16da86a4461c"
+      "bytes": 982810,
+      "gzipBytes": 430397,
+      "sha256": "8adedb82f07c3fc4568c703461f629106da9b251c555a5e02f4f850ded6ab8b9"
     },
     "poster.webp": {
       "bytes": 12300,
@@ -192,7 +235,7 @@
       "sha256": "1231e98935c1461e6af66b42595eaaa9c7bf3b69245ca608f80a94c009956a4c"
     }
   },
-  "runtime": "v1.0.0-4b234be1612230c0",
-  "packageSha256": "4b234be1612230c05790a91f941455f39f0a84ecb28f4c440bfe0c7075c84aaa",
-  "landingSha256": "f70a3a67fd92c7ab2c6275e1a576c6d5189fff691c8f7dfee7f57bbd4276622e"
+  "runtime": "v1.0.0-a26be500c3c684f5",
+  "packageSha256": "a26be500c3c684f55cd71a58c87f38df90be7e5927f4160ca8d30ab1fe6831bc",
+  "landingSha256": "b4cd48706c871bbcb98a31f683df3c9675aee1833899df13c1b472cea4fe4609"
 }
