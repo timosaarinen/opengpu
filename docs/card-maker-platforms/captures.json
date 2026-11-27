@@ -2684,5 +2684,45 @@
       "date": "2026-11-27T19:17:36+02:00",
       "label": "Studio clear coat comparison"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/87ea2c6d180228e012b94ae889c83386b8158c07/internal/images/card-maker-web-live-79035c5/webgpu-settled-50f60d8d28b39559.png",
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "79035c5",
+      "date": "2026-11-27T18:52:00+02:00",
+      "label": "WEB FREE live"
+    },
+    "device": "Chromium desktop",
+    "viewport": [
+      1920,
+      1080
+    ]
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/87ea2c6d180228e012b94ae889c83386b8158c07/internal/images/card-maker-web-live-79035c5/webgl2-cottage-landscape-phone-d77ad9434c440893.png",
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 1688,
+    "height": 780,
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "79035c5",
+      "date": "2026-11-27T18:52:00+02:00",
+      "label": "WEB FREE live"
+    },
+    "device": "Chromium phone emulation",
+    "viewport": [
+      844,
+      390
+    ]
   }
 ]
