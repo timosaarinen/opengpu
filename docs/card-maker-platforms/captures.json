@@ -2254,5 +2254,212 @@
       "date": "2026-11-27T17:17:40+02:00",
       "label": "Studio shine comparison"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/subtle-phase-30-7bf3601c23ba9c7f.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/subtle-sway-769d6c3e04b2290c.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/subtle-phase-100-ecff2275ffc815b2.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/subtle-phase-170-8f76207b0ee94a3b.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/subtle-4k-highlight-crop-0cb71146593a6c9e.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 820,
+    "height": 770,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Subtle · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/medium-phase-30-8bcef6333d704066.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/medium-sway-15469f67f02ff472.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/medium-phase-100-7edba807718bafeb.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/medium-phase-170-8abed7461334113f.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/medium-4k-highlight-crop-9fd5a62284b444fc.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 820,
+    "height": 770,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Medium · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/pronounced-phase-30-9d09baaa62c5b1ff.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/pronounced-sway-e7424e06381bd6e8.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/pronounced-phase-100-e62928801aba114f.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/pronounced-phase-170-50ee48096e03d9d6.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1b4b4e95a69257644d927c019d7e0ee00b8a9b3f/internal/images/card-maker-studio-paper-detail-20261127/pronounced-4k-highlight-crop-312ed95965c56e79.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 820,
+    "height": 770,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Pronounced · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "0f5782d",
+      "date": "2026-11-27T17:39:55+02:00",
+      "label": "Studio paper detail"
+    }
   }
 ]
