@@ -1688,5 +1688,125 @@
       "number": 32,
       "revision": "28873ef"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-1080p-cottage-d73a69ed4960fe47.png",
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "device": "Cottage · 1080p · DPR 1 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-1080p-riverlight-f8afdeeaf2b0988c.png",
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "device": "Riverlight · 1080p · DPR 1 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-4k-cottage-08d2788400757314.png",
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "device": "Cottage · 4k · DPR 2 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-4k-riverlight-61c222baacbe268c.png",
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "viewport": [
+      1920,
+      1080
+    ],
+    "device": "Riverlight · 4k · DPR 2 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-phone-cottage-5ef65f7df4c8b4a5.png",
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 750,
+    "height": 1624,
+    "date": "2026-11-27",
+    "viewport": [
+      375,
+      812
+    ],
+    "device": "Cottage · phone emulation · DPR 2 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/1ad7c27acbd9bf9d13b9c77558bd9c98254af392/internal/images/card-maker-web-parity-3aa0139/parity-900add8-phone-riverlight-71c7b39318dfa3cf.png",
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 750,
+    "height": 1624,
+    "date": "2026-11-27",
+    "viewport": [
+      375,
+      812
+    ],
+    "device": "Riverlight · phone emulation · DPR 2 · WebGPU (software)",
+    "build": {
+      "version": "1.0.0",
+      "number": 2,
+      "revision": "3aa0139",
+      "date": "2026-11-27T14:19:35+02:00",
+      "label": "Web performance preview"
+    }
   }
 ]
