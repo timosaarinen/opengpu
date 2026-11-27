@@ -1952,5 +1952,40 @@
       "revision": "d8f204f"
     },
     "device": "Phone-size Windows viewport (200%)"
+  },
+  {
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 1688,
+    "height": 780,
+    "viewport": [
+      844,
+      390
+    ],
+    "device": "iPhone-sized Chromium emulation",
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/53b0e350dd96aff44f474bac98f80ea1e1538803/internal/images/card-maker-29-viewport-b5a20a3/webgl2-cottage-landscape-phone-26e1c40f3a2fbb9c.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b5a20a3",
+      "date": "2026-11-27T16:27:25+02:00",
+      "label": "#29 viewport"
+    }
+  },
+  {
+    "platform": "Windows",
+    "screen": "Editor",
+    "width": 2560,
+    "height": 1080,
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/53b0e350dd96aff44f474bac98f80ea1e1538803/internal/images/card-maker-29-viewport-b5a20a3/windows-editor-2560x1080-53e7128cde09b401.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "b5a20a3",
+      "date": "2026-11-27T16:27:25+02:00",
+      "label": "#29 viewport"
+    }
   }
 ]
