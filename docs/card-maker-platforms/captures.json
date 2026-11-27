@@ -2477,5 +2477,212 @@
       "date": "2026-11-27T18:11:33+02:00",
       "label": "PNG export preview"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/subtle-phase-30-8ba607797f317ba4.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/subtle-sway-e32e5c7a7e857edc.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/subtle-phase-110-ceb04190adb62762.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/subtle-phase-202-348c7fba0f8d2425.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Subtle · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/subtle-4k-highlight-crop-f5dd14abfff72d14.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 2300,
+    "height": 1170,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Subtle · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/medium-phase-30-2b96092eb783cd66.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium (satin) · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/medium-sway-e4f181953d60d9d0.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/medium-phase-110-59aa5b627e011253.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium (satin) · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/medium-phase-202-6f58c3474b0b1bb5.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Medium (satin) · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/medium-4k-highlight-crop-5205216e468cdf5d.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 2300,
+    "height": 1170,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Medium (satin) · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/pronounced-phase-30-0d601c6f7a754cb8.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced (glossy) · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/pronounced-sway-7c27483863b5c9f0.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/pronounced-phase-110-c5a4eb74b517af1c.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced (glossy) · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/pronounced-phase-202-7f5b8ee1774ecff0.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "Pronounced (glossy) · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/4b2c674d69c754eca4bd60ae3636a21acf804e71/internal/images/card-maker-studio-coat-base-20261127/pronounced-4k-highlight-crop-db5ac0545dce409d.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 2300,
+    "height": 1170,
+    "viewport": [
+      3840,
+      2160
+    ],
+    "date": "2026-11-27",
+    "device": "Pronounced (glossy) · 4K highlight crop at 100%",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "627f149",
+      "date": "2026-11-27T19:17:36+02:00",
+      "label": "Studio clear coat comparison"
+    }
   }
 ]
