@@ -1658,5 +1658,35 @@
       "date": "2026-11-27T13:59:42+02:00",
       "label": "#29 preview"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/ae0454ebfae7daaefc5bc169e6be027dd9b23bc9/internal/images/snowman-export-preview-32-build32/candidate-4k-video-early-455f83f5d69f7b71.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "date": "2026-11-27T12:03:25+02:00",
+      "label": "#32 preview",
+      "number": 32,
+      "revision": "28873ef"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/ae0454ebfae7daaefc5bc169e6be027dd9b23bc9/internal/images/snowman-export-preview-32-build32/candidate-4k-video-mid-45c1c4e8c03ad8a3.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "date": "2026-11-27T12:03:25+02:00",
+      "label": "#32 preview",
+      "number": 32,
+      "revision": "28873ef"
+    }
   }
 ]
