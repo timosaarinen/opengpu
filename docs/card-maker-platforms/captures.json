@@ -1008,5 +1008,150 @@
       "date": "2026-11-27T12:21:19+02:00",
       "label": "#29 preview"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-4k-phase-1-9942bf585e3a7785.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "device": "3840 × 2160 · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-4k-phase-2-b1c80016dfd4a236.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "device": "3840 × 2160 · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-4k-phase-3-561521c69817a2f4.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 3840,
+    "height": 2160,
+    "date": "2026-11-27",
+    "device": "3840 × 2160 · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-1080p-phase-1-4c07392909b449f5.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "1920 × 1080 · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    },
+    "video": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/studio-sway-release-8e72e9831b2bc543.mp4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-1080p-phase-2-9d14922ef368d668.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "1920 × 1080 · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-1080p-phase-3-f692415ed4c7c61c.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 1920,
+    "height": 1080,
+    "date": "2026-11-27",
+    "device": "1920 × 1080 · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-phone-phase-1-62481e0354dd793c.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 640,
+    "height": 960,
+    "date": "2026-11-27",
+    "device": "640 × 960 · Sway phase 1",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-phone-phase-2-17f16e3cc111f309.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 640,
+    "height": 960,
+    "date": "2026-11-27",
+    "device": "640 × 960 · Sway phase 2",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/804fbcbf6a2166491fddff74cf4eb787a98be71e/internal/images/card-maker-studio-preview-20261127/image-phone-phase-3-d6cf900097752dcf.png",
+    "platform": "Windows",
+    "screen": "Studio",
+    "width": 640,
+    "height": 960,
+    "date": "2026-11-27",
+    "device": "640 × 960 · Sway phase 3",
+    "build": {
+      "version": "1.0.0",
+      "number": 4,
+      "revision": "7bb9305",
+      "date": "2026-11-27T13:08:49+02:00",
+      "label": "Studio preview"
+    }
   }
 ]

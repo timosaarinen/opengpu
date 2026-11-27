@@ -20,6 +20,10 @@ IMAGE_URL = re.compile(
     r"https://raw\.githubusercontent\.com/timosaarinen/opengpu/[0-9a-f]{40}"
     r"/internal/images/([a-z0-9_-]+/[a-z0-9_-]+-[0-9a-f]{16}\.png)"
 )
+VIDEO_URL = re.compile(
+    r"https://raw\.githubusercontent\.com/timosaarinen/opengpu/[0-9a-f]{40}"
+    r"/internal/images/[a-z0-9_-]+/[a-z0-9_-]+-[0-9a-f]{16}\.mp4"
+)
 
 PAGE = """<!doctype html>
 <html lang="en">
@@ -137,12 +141,17 @@ def read_captures(path):
 
 def validate_capture(capture):
     require_fields(
-        capture, ("url", "platform", "screen", "width", "height", "date", "build"), ("device", "viewport")
+        capture, ("url", "platform", "screen", "width", "height", "date", "build"),
+        ("device", "viewport", "video")
     )
     if capture["platform"] not in PLATFORMS or capture["screen"] not in SCREENS:
         raise ValueError("Use a supported platform and screen")
     if not isinstance(capture["url"], str) or not IMAGE_URL.fullmatch(capture["url"]):
         raise ValueError("Expected an immutable PNG URL from publish-captures.py")
+    if "video" in capture and (
+        not isinstance(capture["video"], str) or not VIDEO_URL.fullmatch(capture["video"])
+    ):
+        raise ValueError("Expected an immutable MP4 URL from publish-captures.py")
     if not all(positive_int(capture[key]) for key in ("width", "height")):
         raise ValueError("Image width and height must be positive pixel counts")
     if "viewport" in capture:
@@ -206,6 +215,9 @@ def render_capture(capture):
     build_label = f" ({escape(build['label'])})" if "label" in build else ""
     capture_date = capture["date"]
     url = capture["url"]
+    clip = ""
+    if "video" in capture:
+        clip = f'\n                  <a href="{capture["video"]}">Watch the Studio sway (MP4)</a>'
     return f"""              <figure>
                 <a class="preview" href="{url}" target="_blank" rel="noopener"
                    aria-label="Open {platform} {screen} capture at full size, {surface}, {orientation}">
@@ -213,7 +225,7 @@ def render_capture(capture):
                 </a>
                 <figcaption>
                   <strong>{platform} · {surface}</strong>
-                  <span class="capture-meta">{orientation} · {build['version']} · Build {build['number']}{build_label} · <time datetime="{capture_date}">{capture_date}</time></span>
+                  <span class="capture-meta">{orientation} · {build['version']} · Build {build['number']}{build_label} · <time datetime="{capture_date}">{capture_date}</time></span>{clip}
                 </figcaption>
               </figure>"""
 
