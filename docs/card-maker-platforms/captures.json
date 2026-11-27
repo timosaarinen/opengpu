@@ -953,5 +953,60 @@
       "version": "1.0.0"
     },
     "device": "Phone-size Windows viewport"
+  },
+  {
+    "platform": "Web desktop",
+    "screen": "Editor",
+    "width": 1920,
+    "height": 1080,
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/8694f8bd2126a49694ab87990e6520c88d05842e/internal/images/card-maker-29-preview-c81c2bc/canvas2d-settled-f75756795dc037d3.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "c81c2bc",
+      "date": "2026-11-27T12:21:19+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 780,
+    "height": 1688,
+    "viewport": [
+      390,
+      844
+    ],
+    "device": "iPhone-sized Chromium emulation",
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/8694f8bd2126a49694ab87990e6520c88d05842e/internal/images/card-maker-29-preview-c81c2bc/canvas2d-settled-phone-6c7fcb8adbd334f5.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "c81c2bc",
+      "date": "2026-11-27T12:21:19+02:00",
+      "label": "#29 preview"
+    }
+  },
+  {
+    "platform": "Web mobile",
+    "screen": "Editor",
+    "width": 1688,
+    "height": 780,
+    "viewport": [
+      844,
+      390
+    ],
+    "device": "iPhone-sized Chromium emulation",
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/8694f8bd2126a49694ab87990e6520c88d05842e/internal/images/card-maker-29-preview-c81c2bc/canvas2d-cottage-landscape-phone-a6e525be7b5a6190.png",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "c81c2bc",
+      "date": "2026-11-27T12:21:19+02:00",
+      "label": "#29 preview"
+    }
   }
 ]
