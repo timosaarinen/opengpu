@@ -2461,5 +2461,21 @@
       "date": "2026-11-27T17:39:55+02:00",
       "label": "Studio paper detail"
     }
+  },
+  {
+    "url": "https://raw.githubusercontent.com/timosaarinen/opengpu/da5d0dcfb0495f561047fbe0acdd11971bea397b/internal/images/snowman-export-preview-32-716b2de/1080p-png-export-99c32b3d91459c0f.png",
+    "platform": "Windows",
+    "screen": "Export progress",
+    "width": 1920,
+    "height": 1080,
+    "device": "Windows desktop at 100%",
+    "date": "2026-11-27",
+    "build": {
+      "version": "1.0.0",
+      "number": 29,
+      "revision": "716b2de",
+      "date": "2026-11-27T18:11:33+02:00",
+      "label": "PNG export preview"
+    }
   }
 ]
